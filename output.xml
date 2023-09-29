@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.13 on darwin)" generated="20221228 15:57:43.870" rpa="false" schemaversion="2">
+<suite id="s1" name="Amazon" source="/Users/leo/Robot Framework/Amazon/Tests/Amazon.robot">
+<test id="s1-t1" name="User must sign in to check out">
+<kw name="Open Browser">
+<arg>https://www.amazon.com</arg>
+<arg>chrome</arg>
+<msg timestamp="20221228 15:57:43.891" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20221228 15:57:43.891" endtime="20221228 15:57:43.893"/>
+</kw>
+<kw name="Input Text">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<status status="NOT RUN" starttime="20221228 15:57:43.895" endtime="20221228 15:57:43.895"/>
+</kw>
+<kw name="Click Button">
+<arg>id=nav-search-submit-button</arg>
+<status status="NOT RUN" starttime="20221228 15:57:43.896" endtime="20221228 15:57:43.896"/>
+</kw>
+<kw name="Wait Until Page Contains">
+<arg>"Ferrari 458"</arg>
+<status status="NOT RUN" starttime="20221228 15:57:43.897" endtime="20221228 15:57:43.898"/>
+</kw>
+<kw name="Click Link">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/div/div/div/div/div/div[2]/div[1]/h2/a/span</arg>
+<status status="NOT RUN" starttime="20221228 15:57:43.899" endtime="20221228 15:57:43.899"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" starttime="20221228 15:57:43.900" endtime="20221228 15:57:43.900"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20221228 15:57:43.890" endtime="20221228 15:57:43.901">No keyword with name 'Open Browser' found.</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" starttime="20221228 15:57:43.874" endtime="20221228 15:57:43.902"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221228 15:57:43.888" level="ERROR">Error in file '/Users/leo/Robot Framework/Amazon/Tests/Amazon.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/leo/.vscode/extensions/robocorp.robotframework-lsp-1.7.3/src/robotframework_debug_adapter
+  /Users/leo/Robot Framework/Amazon
+  /Users/leo/.vscode/extensions/robocorp.robotframework-lsp-1.7.3/src
+  /Users/leo/.vscode/extensions/robocorp.robotframework-lsp-1.7.3/src/robotframework_ls/vendored
+  /Users/Shared/robocorp/ht/81bcd95_b1f3c24_10d003d7/lib/python39.zip
+  /Users/Shared/robocorp/ht/81bcd95_b1f3c24_10d003d7/lib/python3.9
+  /Users/Shared/robocorp/ht/81bcd95_b1f3c24_10d003d7/lib/python3.9/lib-dynload
+  /Users/Shared/robocorp/ht/81bcd95_b1f3c24_10d003d7/lib/python3.9/site-packages</msg>
+</errors>
+</robot>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.8.10 on darwin)" generated="20220725 22:54:42.788" rpa="false" schemaversion="2">
+<suite id="s1" name="Amazon" source="/Users/leo/Robot Framework/Amazon/Tests/Amazon.robot">
+<test id="s1-t1" name="User must sign in to check out">
+<kw name="Open Browser">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<msg timestamp="20220725 22:54:42.828" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20220725 22:54:42.828" endtime="20220725 22:54:42.828"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" starttime="20220725 22:54:42.831" endtime="20220725 22:54:42.831"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220725 22:54:42.826" endtime="20220725 22:54:42.831">No keyword with name 'Open Browser' found.</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" starttime="20220725 22:54:42.790" endtime="20220725 22:54:42.832"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220725 22:54:42.825" level="ERROR">Error in file '/Users/leo/Robot Framework/Amazon/Tests/Amazon.robot' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/leo/.vscode/extensions/robocorp.robotframework-lsp-0.49.0/src/robotframework_debug_adapter
+  /Users/leo/Robot Framework/Amazon
+  /Users/leo/.vscode/extensions/robocorp.robotframework-lsp-0.49.0/src
+  /Users/leo/.vscode/extensions/robocorp.robotframework-lsp-0.49.0/src/robotframework_ls/vendored
+  /Users/Shared/robocorp/ht/81bcd95_b1f3c24_0041a488/lib/python38.zip
+  /Users/Shared/robocorp/ht/81bcd95_b1f3c24_0041a488/lib/python3.8
+  /Users/Shared/robocorp/ht/81bcd95_b1f3c24_0041a488/lib/python3.8/lib-dynload
+  /Users/Shared/robocorp/ht/81bcd95_b1f3c24_0041a488/lib/python3.8/site-packages</msg>
+</errors>
+</robot>
